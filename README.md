@@ -44,7 +44,7 @@ testCompile 'junit:junit:4.12'<br/>
 
 **GIVEN** that a user is not registered <br/>
 **WHEN** a user create account with any empty field <br/>
-**THEN** user account manager notify user that there’s an error with message ‘<given field> can't be empty!’
+**THEN** user account manager notify user that there’s an error with message ‘[given field] can't be empty!’
 
 **GIVEN** that a user is not registered <br/>
 **WHEN** a user create account with a valid first name, last name, email, username and password <br/>
