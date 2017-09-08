@@ -31,10 +31,6 @@ testCompile 'junit:junit:4.12'<br/>
 # Requirement (in BDD way) - stage II
 
 **GIVEN** that a user is not registered <br/>
-**WHEN** a user create account with a valid first name, last name, email, username and password <br/>
-**THEN** user account manager will make a request to server to create account
-
-**GIVEN** that a user is not registered <br/>
 **WHEN** a user create account with a password shorter then 6 character <br/>
 **THEN** user account manager notify user that there’s an error with message ‘Password shorter then 6 characters’
 
@@ -45,6 +41,14 @@ testCompile 'junit:junit:4.12'<br/>
 **GIVEN** that a user is not registered and the app is not connected to internet <br/>
 **WHEN** a user create account with a valid first name, last name, email, username and password <br/>
 **THEN** user account manager notify user that there’s an error with message ‘No internet connection’
+
+**GIVEN** that a user is not registered <br/>
+**WHEN** a user create account with any empty field <br/>
+**THEN** user account manager notify user that there’s an error with message ‘<given field> can't be empty!’
+
+**GIVEN** that a user is not registered <br/>
+**WHEN** a user create account with a valid first name, last name, email, username and password <br/>
+**THEN** user account manager will make a request to server to create account
 
 **GIVEN** that a user is not registered <br/>
 **WHEN** a user create account with a valid first name, last name, email, username and password <br/>
